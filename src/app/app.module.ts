@@ -11,7 +11,6 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
-
 @NgModule({
   imports: [
     BrowserModule,
@@ -19,6 +18,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
       { path: 'contact', component: ContactUsComponent },
       { path: 'about', component: AboutUsComponent },
       { path: 'products', component: ProductsListComponent },
+      { path: 'ourproducts', component: ProductsListComponent },
+      { path: 'ourbonsai', component: ProductsListComponent },
       { path: 'cart', component: ShoppingCartComponent },
       { path: '', redirectTo: '/products', pathMatch: 'full' },
       { path: '**', component: PageNotFoundComponent },
